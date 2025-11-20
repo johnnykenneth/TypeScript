@@ -5,3 +5,4 @@ Repositório criado com intuito de servir como um guia, para iniciantes em types
 
 jejejje
 jijijiji2
+olá mundo
