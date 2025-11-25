@@ -2,7 +2,14 @@
 Repositório criado com intuito de servir como um guia, para iniciantes em typescript.
 
 ## **O que é typescript?**
-- TypeScript é uma extensão do JavaScript que introduz a funcionalidade de tipagem estática opcional. Essencialmente, ele aprimora o JavaScript, tornando-o mais confiável e estruturado para a criação de grandes sistemas e aplicações complexas. O TypeScript foi desenvolvido pela Microsoft e atua como um complemento, não como um substituto, do JavaScript. Ele incorpora recursos avançados, como o paradigma de Orientação a Objetos, e aumenta significativamente a produtividade do profissional de desenvolvimento.
+- TypeScript é uma linguagem baseada no JavaScript que adiciona tipagem estática opcional, O typescript foi criado para tornar o desenvolvimento mais seguro, organizado e escalável, especialmente em aplicações grandes e complexas, por ser um superset do JavaScript, todo código JavaScript é válido em TypeScript, mas o TypeScript adiciona recursos extras, como:
+
+Tipos estáticos
+Classes e interfaces
+Suporte avançado a orientação a objetos
+Verificação de erros antes da execução
+
+Além disso, o TypeScript melhora a produtividade e reduz erros, sem substituir o JavaScript, apenas o complementa.
 
 ## **Quem criou o typescript?**
 - O TypeScript foi criado pela Microsoft e a equipe foi liderada pelo engenheiro de software Anders Hejlsberg, que também é conhecido por criar linguagens como C# e Delphi. O desenvolvimento inicial começou em 2010, e o lançamento público ocorreu em 2012.  
