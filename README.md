@@ -23,7 +23,8 @@ Além disso, o TypeScript melhora a produtividade e reduz erros, sem substituir 
 -------------------------------------------- 2
 # **Tipos básicos e variáveis**
 
-Tipos primitivos:
+## Tipos primitivos:
+- Os tipos primitivos são os tipos de dados mais básicos e fundamentais da linguagem **Javascript**, que o **TypeScript** tipa de forma estrita que podem conter valores simples e imutáveis.
 string, number, boolean
 
 ``let, const``
