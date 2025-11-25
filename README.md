@@ -37,6 +37,25 @@ Seção "Exemplos: variáveis"
 
 -------------------------------------------- 4 
 
+# **Loops e interação:**
+
+for
 ``for (var c = 1; c < 5; c++) {
     console.log(c);
-} ``
+}``
+
+while
+
+Iteração básica
+
+🧩 Criar e commitar:
+
+exemplos/loops.ts
+
+Atualizar o README com:
+
+Tipos de loops
+
+Quando usar cada um
+
+📌 Importância: Mostra estruturas de repetição essenciais.
