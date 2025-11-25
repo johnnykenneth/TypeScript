@@ -42,6 +42,47 @@ Seção "Tipos básicos"
 
 Seção "Exemplos: variáveis"
 
+-------------------------------------------- 3
+# **Estruturas Condicionais no TypeScript**
+
+
+No TypeScript, as estruturas condicionais permitem executar blocos diferentes de código dependendo do resultado de expressões booleanas (true/false), isto é se a condição é atendida ou não. As mais usadas são:
+- if
+- else if
+- else
+
+Estruturas condicionais permitem que o programa tome decisões com base em condições assim como na vida real essas condições nos cercam o tempo todo, pense: ao sair de casa, ao abrir a porta, 
+ - se(if) estiver chovendo -> você irá voltar para pegar o guarda-chuva
+ - se não(else) estiver chovendo -> você poderá sair
+   
+<code>
+ let chovendo: boolean = true;
+ let pegarGuardaChuva: boolean;
+
+ if (chovendo) {
+   pegarGuardaChuva = true;
+ } else {
+   pegarGuardaChuva = false;
+ }
+</code>
+
+Ou por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas da sua família podem ou não votar, ao perguntar você terá as condições:
+ - se(if) a idade for maior ou igual a 18 -> é maior de idade e pode votar
+ - se não, verifique se(else if) a idade for maior ou igual a 16 e menor que 18 -> pode votar mas ainda não é maior de idade
+ - se não(else) é menor de idade
+
+<code>
+ const idade: number = 17;
+
+ if (idade >= 18) {
+   console.log("Você é maior de idade.");
+ } else if (idade >= 16) {
+   console.log("Você pode votar, mas ainda não é maior de idade.");
+ } else {
+   console.log("Você é menor de idade.");
+ }
+</code>
+
 -------------------------------------------- 4 
 
 # **Loops e interação:**
