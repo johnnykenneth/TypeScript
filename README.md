@@ -20,7 +20,7 @@ string, number, boolean
 
 Template strings
 
-🧩 Criar e commitar:
+ Criar e commitar:
 
 exemplos/hello_world.ts
 
