@@ -5,3 +5,26 @@ Repositório criado com intuito de servir como um guia, para iniciantes em types
 
 ## **Quem criou o typescript?**
 - O TypeScript foi criado pela Microsoft e a equipe foi liderada pelo engenheiro de software Anders Hejlsberg, que também é conhecido por criar linguagens como C# e Delphi. O desenvolvimento inicial começou em 2010, e o lançamento público ocorreu em 2012.  
+
+
+-------------------------------------------- 2
+# **Tipos básicos e variáveis**
+
+Tipos primitivos:
+string, number, boolean
+
+``let, const``
+
+Template strings
+
+🧩 Criar e commitar:
+
+exemplos/hello_world.ts
+
+exemplos/variaveis_e_tipos.ts
+
+Atualizar o README com:
+
+Seção "Tipos básicos"
+
+Seção "Exemplos: variáveis"
