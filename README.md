@@ -4,10 +4,10 @@ Repositório criado com intuito de servir como um guia, para iniciantes em types
 ## **O que é typescript?**
 - TypeScript é uma linguagem baseada no JavaScript que adiciona tipagem estática opcional, O typescript foi criado para tornar o desenvolvimento mais seguro, organizado e escalável, especialmente em aplicações grandes e complexas, por ser um superset do JavaScript, todo código JavaScript é válido em TypeScript, mas o TypeScript adiciona recursos extras, como:
 
-Tipos estáticos
-Classes e interfaces
-Suporte avançado a orientação a objetos
-Verificação de erros antes da execução
+- Tipos estáticos
+- Classes e interfaces
+- Suporte avançado a orientação a objetos
+- Verificação de erros antes da execução
 
 Além disso, o TypeScript melhora a produtividade e reduz erros, sem substituir o JavaScript, apenas o complementa.
 
