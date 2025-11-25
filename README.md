@@ -10,6 +10,9 @@ Repositório criado com intuito de servir como um guia, para iniciantes em types
 ## **Para que serve?**
 - O TypeScript serve para adicionar tipagem estática e recursos modernos ao JavaScript, tornando-o ideal para aplicações grandes e complexas. Ele ajuda a identificar erros de tipo durante o desenvolvimento, antes da execução do código, o que aumenta a produtividade, a organização e a manutenção do código, além de melhorar a experiência do desenvolvedor.
 
+## **Onde é usado**
+- O TypeScript é amplamente utilizado em diversas áreas do desenvolvimento de software, abrangendo desenvolvimento web (frontend e backend), mobile e aplicações empresariais de grande escala. Como um superset do JavaScript que adiciona tipagem estática, ele oferece mais segurança e robustez ao código. 
+
 -------------------------------------------- 2
 # **Tipos básicos e variáveis**
 
