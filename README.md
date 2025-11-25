@@ -48,7 +48,7 @@ while
 
 Iteração básica
 
-🧩 Criar e commitar:
+Criar e commitar:
 
 exemplos/loops.ts
 
@@ -58,4 +58,4 @@ Tipos de loops
 
 Quando usar cada um
 
-📌 Importância: Mostra estruturas de repetição essenciais.
+Importância: Mostra estruturas de repetição essenciais.
