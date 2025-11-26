@@ -126,7 +126,7 @@ node arquivo.js
    // string usando crases:
     nome_usuario = `Garibaldo`
    ````
-- **Number**
+- **Number**:
   - O **Number** é um tipo dado que representa qualquer valor númerico seja número inteiros, decimais ou número mais complexos, ele aceita qualque operação matemática como adição (`+`) subtração (`-`) divisão (`/`) multiplicação (`*`) e etc..
   - Exemplo:
   ``` ts
@@ -145,10 +145,13 @@ node arquivo.js
        console.log(numero) // Vai escrever no terminal: 22
        ```
    - `console.log()` usamos pra escrever no terminal, o conteúdo sempre fica entre parenteses.
-- **Boolean**
+- **Boolean*
   - O **Boolean** é um tipo de dado que só tem dois valores, sendo eles ``true``(verdadeiro) ou ``false``(falso). Ela é usado quando precisamos tomar decisões importantes no nosso código, como por exemplo comparar valores ou verificar se uma função é verdadeira.
-
-exemplos/hello_world.ts
+- ## Tipagem de variáveis
+  Agora que aprendemos os tipos principais e o que é uma variável, vamos definir o tipo de uma váriavel. Antes devemos entender a diferença entre tipagem dinâmica e tipaem estatica:
+    -  **Tipagem dinâmica:**
+    -  **Tipagem statica:**
+exemplos/hello_world.tse
 
 exemplos/variaveis_e_tipos.ts
 
