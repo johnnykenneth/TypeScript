@@ -232,6 +232,9 @@ Importância: Mostra estruturas de repetição essenciais.
 As funções são blocos de código que executam uma tarefa específica.
 No TypeScript, podemos definir tipos para os parâmetros e para o retorno, deixando o código mais seguro e evitando erros durante o desenvolvimento.
 
+## **Importância das funções**
+São o parâmetro principal onde a tipagem estática ocorre. Seu modo de funcionamento é quase igual a o java script basico, nele você define um tipo de parâmetro e uma variavel e então no final define o retun, assim fazendo com que  a função "retorne" o valor escrito para a variável da função assim fazendo-a funcionar e assim aplicando a tipagem estática , além de possibilitar a reutilização de varíaveis previamente criadas sem precisar definilas denovo.
+
 ### **Função simples**
 
 ```ts
