@@ -108,3 +108,121 @@ Tipos de loops
 Quando usar cada um
 
 Importância: Mostra estruturas de repetição essenciais.
+
+-------------------------------------------- 5
+# **Funções, Instalação e Execução**
+
+## **Funções em TypeScript**
+
+As funções são blocos de código que executam uma tarefa específica.
+No TypeScript, podemos definir tipos para os parâmetros e para o retorno, deixando o código mais seguro e evitando erros durante o desenvolvimento.
+
+### **Função simples**
+
+```ts
+function saudacao(nome: string): string {
+  return `Olá, ${nome}`;
+}
+```
+
+### **Parâmetros tipados**
+
+```ts
+function somar(a: number, b: number): number {
+  return a + b;
+}
+```
+
+### **Retorno tipado**
+
+```ts
+function dobrar(valor: number): number {
+  return valor * 2;
+}
+```
+
+### **Parâmetro opcional**
+
+```ts
+function mostrarMensagem(msg?: string): void {
+  console.log(msg ?? "Nenhuma mensagem informada");
+}
+```
+
+### **Valor padrão**
+
+```ts
+function apresentar(nome: string = "Visitante"): void {
+  console.log(`Bem-vindo, ${nome}`);
+}
+```
+
+### **Arrow function**
+
+```ts
+const multiplicar = (a: number, b: number): number => {
+  return a * b;
+};
+```
+
+---
+
+## **Instalação do TypeScript**
+
+### **Windows**
+
+1. Instalar o Node.js.
+2. Abrir o CMD ou PowerShell.
+3. Instalar o TypeScript globalmente:
+
+```
+npm install -g typescript
+```
+
+4. Verificar a instalação:
+
+```
+tsc -v
+```
+
+### **Linux (Ubuntu/Debian)**
+
+```
+sudo apt install nodejs npm
+sudo npm install -g typescript
+tsc -v
+```
+
+---
+
+## **Como compilar e executar**
+
+Para compilar um arquivo TypeScript (`.ts`) para JavaScript (`.js`):
+
+```
+tsc arquivo.ts
+```
+
+Para executar o arquivo gerado:
+
+```
+node arquivo.js
+```
+
+---
+
+## **Prós e Contras do TypeScript**
+
+### **Prós**
+
+* Tipagem estática.
+* Ajuda a detectar erros antes da execução.
+* Melhora a organização em projetos grandes.
+* Ótimo suporte em editores como VSCode.
+* Facilita a manutenção do código.
+
+### **Contras**
+
+* Requer compilação.
+* Pode ser mais verboso que JavaScript.
+* Exige configuração inicial.
