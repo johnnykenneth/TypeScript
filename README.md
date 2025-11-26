@@ -23,15 +23,68 @@ Além disso, o TypeScript melhora a produtividade e reduz erros, sem substituir 
 -------------------------------------------- 2
 # **Tipos básicos e variáveis**
 
+## Variáveis:
+- Antes de entender os tipos primitivos (tipos básicos), precisamos entender o que é uma variável. Imagine que uma variável é como uma caixa, e essa caixa só cabe uma coisa por vez. Sempre que precisarmos colocar algo novo, teremos que tirar o que já estava nela. A variável funciona exatamente assim: ela guarda um dado, e sempre que colocamos um novo dado, ela descarta o antigo, porque só aceita um valor por vez.
+- **Declaração de uma variável**:
+  - Para declarar uma variável podemos usar duas palavras-chave: let e const. Depois delas, precisamos escolher um nome, assim:
+     ``` ts
+     let nome;
+     // ou
+     const nome;
+     ```
+  - Para dar um valor à variável, usamos o sinal de igualdade, assim:
+     ``` ts
+     let nome = 'dado'
+     // ou
+     const nome = 'dado'
+     ```
+    observaçóes importantes:
+     - O sinal de igualdade não significa igualdade e sim que a variável recebe um dado.
+     - `//` (duas barras) usamos na frete do texto que queremos comentar o código (não será lido pela maquina).
+  - **Em que momento usar `let` ou `const`?**
+    - `let`:
+      Usamos quando queremos declarar uma variável que pode ser alterada depois. É a opção que vamos usar na maioria das vezes.
+    - `const`:
+      Usamos quando o valor não pode ser alterado depois da primeira declaração. Ou seja, ela não muda.
+
 ## Tipos primitivos:
-- Os tipos primitivos são os tipos de dados mais básicos e fundamentais da linguagem **Javascript**, que o **TypeScript** tipa de forma estrita que podem conter valores simples e imutáveis.
-string, number, boolean
-
-``let, const``
-
-Template strings
-
- Criar e commitar:
+- Os tipos primitivos são os tipos de dados mais básicos e fundamentais da linguagem **Javascript**, O **TypeScript** apenas faz uma tipagem mais rígida desses valores. Os tipos primitivos mais conhecidos são:
+- **String**
+  - A **String** é um tipo de dado que representa texto, ela é escrito colocando os caracteres entre apas como: apas duplas (""), simples ('') ou crases (``), qualquer caractere escrito dentro deles será considerado uma **string** inclusive números.
+  - Exemplo:
+   ``` ts
+   let nome_usuario;
+    
+   // string usando apas duplas.
+   nome_usuario = "Pedrinho"
+    
+   // string usando apas simples.
+   nome_usuario = 'Tony'
+ 
+   // string usando crases:
+    nome_usuario = `Garibaldo`
+   ````
+- **Number**
+  - O **Number** é um tipo dado que representa qualquer valor númerico seja número inteiros, decimais ou número mais complexos, ele aceita qualque operação matemática como adição (`+`) subtração (`-`) divisão (`/`) multiplicação (`*`) e etc..
+  - Exemplo:
+  ``` ts
+  let numero1 = 2
+  let numero2 = 3
+  let numero = numero1 + numero2
+  console.log(numero) // Vais escrever no terminal: 5
+  ```
+  Observações importantes:
+   - 2 é um Number (numero) e "2" é uma String, ou seja não é possive somar os dois como números, caso some será feita uma concatenação (junção de textos).
+      Exemplo:
+       ``` ts
+       let numero1 = 2
+       let numero2 = "2"
+       let numero = numero1 + numero2
+       console.log(numero) // Vai escrever no terminal: 22
+       ```
+   - `console.log()` usamos pra escrever no terminal, o conteúdo sempre fica entre parenteses.
+- **Boolean**
+  - O **Boolean** é um tipo de dado que só tem dois valores, sendo eles ``true``(verdadeiro) ou ``false``(falso). Ela é usado quando precisamos tomar decisões importantes no nosso código, como por exemplo comparar valores ou verificar se uma função é verdadeira.
 
 exemplos/hello_world.ts
 
