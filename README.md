@@ -20,6 +20,68 @@ Além disso, o TypeScript melhora a produtividade e reduz erros, sem substituir 
 ## **Onde é usado**
 - O TypeScript é amplamente utilizado em diversas áreas do desenvolvimento de software, abrangendo desenvolvimento web (frontend e backend), mobile e aplicações empresariais de grande escala. Como um superset do JavaScript que adiciona tipagem estática, ele oferece mais segurança e robustez ao código. 
 
+## **Prós e Contras do TypeScript**
+
+### **Prós**
+
+* Tipagem estática.
+* Ajuda a detectar erros antes da execução.
+* Melhora a organização em projetos grandes.
+* Ótimo suporte em editores como VSCode.
+* Facilita a manutenção do código.
+
+### **Contras**
+
+* Requer compilação.
+* Pode ser mais verboso que JavaScript.
+* Exige configuração inicial.
+
+---
+
+## **Instalação do TypeScript**
+
+### **Windows**
+
+1. Instalar o Node.js.
+2. Abrir o CMD ou PowerShell.
+3. Instalar o TypeScript globalmente:
+
+```
+npm install -g typescript
+```
+
+4. Verificar a instalação:
+
+```
+tsc -v
+```
+
+### **Linux (Ubuntu/Debian)**
+
+```
+sudo apt install nodejs npm
+sudo npm install -g typescript
+tsc -v
+```
+
+---
+
+## **Como compilar e executar**
+
+Para compilar um arquivo TypeScript (`.ts`) para JavaScript (`.js`):
+
+```
+tsc arquivo.ts
+```
+
+Para executar o arquivo gerado:
+
+```
+node arquivo.js
+```
+
+---
+
 -------------------------------------------- 2
 # **Tipos básicos e variáveis**
 
@@ -218,64 +280,4 @@ const multiplicar = (a: number, b: number): number => {
 };
 ```
 
----
 
-## **Instalação do TypeScript**
-
-### **Windows**
-
-1. Instalar o Node.js.
-2. Abrir o CMD ou PowerShell.
-3. Instalar o TypeScript globalmente:
-
-```
-npm install -g typescript
-```
-
-4. Verificar a instalação:
-
-```
-tsc -v
-```
-
-### **Linux (Ubuntu/Debian)**
-
-```
-sudo apt install nodejs npm
-sudo npm install -g typescript
-tsc -v
-```
-
----
-
-## **Como compilar e executar**
-
-Para compilar um arquivo TypeScript (`.ts`) para JavaScript (`.js`):
-
-```
-tsc arquivo.ts
-```
-
-Para executar o arquivo gerado:
-
-```
-node arquivo.js
-```
-
----
-
-## **Prós e Contras do TypeScript**
-
-### **Prós**
-
-* Tipagem estática.
-* Ajuda a detectar erros antes da execução.
-* Melhora a organização em projetos grandes.
-* Ótimo suporte em editores como VSCode.
-* Facilita a manutenção do código.
-
-### **Contras**
-
-* Requer compilação.
-* Pode ser mais verboso que JavaScript.
-* Exige configuração inicial.
