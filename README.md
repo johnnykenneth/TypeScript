@@ -206,7 +206,10 @@ Ou por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas 
 
 # **Loops e interação:**
 
-for
+## *O que é um Laço de Repetição?*
+
+Um laço de repetição (ou loop) é uma estrutura que permite que um conjunto de instruções ou um bloco de código seja executado repetidamente com base em uma condição estabelecida ou um número predefinido de vezes.
+
 ``for (var c = 1; c < 5; c++) {
     console.log(c);
 }``
