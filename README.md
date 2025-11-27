@@ -100,9 +100,10 @@ node arquivo.js
      // ou
      const nome = 'dado'
      ```
-    observaçóes importantes:
+    observações importantes:
      - O sinal de igualdade não significa igualdade e sim que a variável recebe um dado.
      - `//` (duas barras) usamos na frete do texto que queremos comentar o código (não será lido pela maquina).
+
   - **Em que momento usar `let` ou `const`?**
     - `let`:
       Usamos quando queremos declarar uma variável que pode ser alterada depois. É a opção que vamos usar na maioria das vezes.
@@ -111,6 +112,7 @@ node arquivo.js
 
 ## Tipos primitivos:
 - Os tipos primitivos são os tipos de dados mais básicos e fundamentais da linguagem **Javascript**, O **TypeScript** apenas faz uma tipagem mais rígida desses valores. Os tipos primitivos mais conhecidos são:
+
 - ### String:
   - A **String** é um tipo de dado que representa texto, ela é escrito colocando os caracteres entre apas como: apas duplas (""), simples ('') ou crases (``), qualquer caractere escrito dentro deles será considerado uma **string** inclusive números.
   - Exemplo:
@@ -126,6 +128,7 @@ node arquivo.js
    // string usando crases:
     nome_usuario = `Garibaldo`
    ````
+
 - ### Number:
   - O **Number** é um tipo dado que representa qualquer valor númerico seja número inteiros, decimais ou número mais complexos, ele aceita qualque operação matemática como adição (`+`) subtração (`-`) divisão (`/`) multiplicação (`*`) e etc..
   - Exemplo:
@@ -144,22 +147,41 @@ node arquivo.js
        let numero = numero1 + numero2
        console.log(numero) // Vai escrever no terminal: 22
        ```
-   - `console.log()` usamos pra escrever no terminal, o conteúdo sempre fica entre parenteses.
+   - `console.log()` usamos pra escrever no terminal, o conteúdo sempre fica entre parenteses. Exemplo: `console.log('Olá, Mundo!')`
+
 - ### Boolean:
   - O **Boolean** é um tipo de dado que só tem dois valores, sendo eles ``true``(verdadeiro) ou ``false``(falso). Ela é usado quando precisamos tomar decisões importantes no nosso código, como por exemplo comparar valores ou verificar se uma função é verdadeira.
 - ## Tipagem de variáveis
   Agora que aprendemos os tipos primitivos e o que é uma variável, vamos definir o tipo de uma variável. Antes disso, precisamos entender a diferença entre tipagem dinâmica e tipagem estática:
+
     -  ### Tipagem dinâmica:
         A tipagem dinâmica dá mais liberdade sobre o dado que uma variável pode receber. Ela está presente em muitas linguagens, como o **JavaScript**. Nelas, você pode atribuir qualquer tipo de dado à mesma variável, seja string, number, boolean etc. Ou seja, você pode ter uma variável que antes guardava um número e depois passar a guardar uma string, o tipo dela muda de acordo com o valor que está armazenando no momento.
+
     -  ### Tipagem statica:
         Na tipagem estática, que é justamente a tipagem do TypeScript, também chamada de tipagem forte precisamos declarar o tipo da variável, o tipo deve ser único não pode ser mudado, ou seja, diferente da tipagem dinâmica, por exemplo quando declaramos uma variável do tipo number e depois colocamos ela pra receber uma string ou qualquer tipo diferente, o compilador irá apresentar erro, pois as variáveis só irá aceitar dados do seu tipo.
+
         -  **Declarando o Tipo de uma Variável**:
             -  No **TypeScritp** quando criamos uma variável e atribuimos um valor, ela automaticamente irá se tornar uma várivel do tipo do primero valor que ela receber, por exemplo: `let nome = "Jose"`; nesse caso a variável terá seu tipo definido como string, e caso tente atribuir um tipo de dado diferente a ela, não irá funcinar.
             - Podemos definir seu tipo sem necessariamente adicona um valor, dessa forma: `let numero: number;` ou `let nome: string = "Jose"`; essa é forma mais recomendada e usada, sempre que for declarar uma variável declare o seu tipo dessa forma.
-[Exemplo](Exemplos)
-exemplos/hello_world.tse
 
-exemplos/variaveis_e_tipos.ts
+  - ### Exemplo de variavei com tipos:
+    - Agora que aprendemos o básico sobre variáveis e tipos, vamos vê alguns exemplos bacanas de como podemos usar elas no nosso código:
+      [Usando variáveis no TypeScritp](Exemplos/variaveis.js)
+
+## Operadores básicos
+  - Em qualquer linguagem de programação existem operações com números, e no TypeScript não é diferente. As operações mais básicas são: adição (+), subtração (-), divisão (/), resto da divisão (%), multiplicação (*) e potência (**). É importante ficar atento à ordem de precedência, representada na tabela abaixo:
+
+    ### Tabela de ordem de precendência
+    |nomes    | Simbulos            |
+    |---------|---------------------|
+    |parenteses |( )                |
+    |potencia|**                    |
+    |multiplicação, divisão, resto| *, /,  %|
+    |adição, subtração| +, -        |
+
+ - **Aqui vai alguns exemplos de como usar:**
+  [Usando operados matemáticos no TypeScript](Exemplos/Operadores.js)
+
 -------------------------------------------- 3
 # **Estruturas Condicionais no TypeScript**
 
