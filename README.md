@@ -209,18 +209,19 @@ Ou por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas 
 
 Um laço de repetição (ou _loop_) é uma estrutura que permite que um conjunto de instruções ou um bloco de código seja executado repetidamente com base em uma condição estabelecida ou um número predefinido de vezes. Em linhas gerais, um laço de repetição é uma forma de se repertir um comando a quantidade de vezes que você desejar.
 
-## **Como funciona um laço de repetição?
+## **Como funciona um laço de repetição?**
 
 1º Definimos uma variável de controle ou contador para começar.
 
 2° Nós definimos uma condição ou um número de vezes que queremos realizar as repetições.
 
 3º A variável de controle, já definida, pode fazer 2 coisas:
-    1. Se definirmos uma condição no 2º passo: 
-        - A variável de controle é responsável por realizar a verificação dessa condição até quando ela for verdadeira. Ou seja, **Enquanto** ela for Verdadeira, a variável de controle executa o comando que o usuário defenir, quando ela for Falsa, o loop é encerrado. Então, o código definido no loop é executado repetidas vezes até que a condição seja falsa.
+
+1. Se definirmos uma condição no 2º passo: 
+    - A variável de controle é responsável por realizar a verificação dessa condição até quando ela for verdadeira. Ou seja, **Enquanto** ela for Verdadeira, a variável de controle executa o comando que o usuário defenir, quando ela for Falsa, o loop é encerrado. Então, o código definido no loop é executado repetidas vezes até que a condição seja falsa.
     
-    2. Se pré-definirmos um número de repetições:
-        - A variável de controle executa o comando a quantidade de vezes definida pelo usuário, o que chamamos de intervalo.
+2. Se pré-definirmos um número de repetições:
+    - A variável de controle executa o comando a quantidade de vezes definida pelo usuário, o que chamamos de intervalo.
 
 ## **Qual a principal função de um laço de repetição?**
 
@@ -228,13 +229,13 @@ A sua principal função é ser a peça-chave para realizar uma Iteração.
 
 Mas o que é uma Iteração?
 
-## **O que é Iteração?
+## **O que é Iteração?**
 
 É o processo de repetição de um código, intrução ou comando dentro de um programa. Resumindo, o 3º passo que definimos anteriormente é uma Iteração, pois a variável de controle verifica a condição, por exemplo, e se esta for verdadeira ele executa o código repetidas vezes, esse processo de repetição é uma Iteração. 
 
 Uma Iteração é algo fundamental para uma linguagem de programação, pois facilita a realização de códigos e comandos longos.
 
-## **Bem, agora que entendemos o que é um laço de repetição e uma iteração, vamos ver como podemos executar laços na linguagem TypeScript:
+## **Bem, agora que entendemos o que é um laço de repetição e uma iteração, vamos ver como podemos executar laços na linguagem TypeScript:**
 
 while
 
