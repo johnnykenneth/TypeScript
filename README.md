@@ -111,7 +111,7 @@ node arquivo.js
 
 ## Tipos primitivos:
 - Os tipos primitivos são os tipos de dados mais básicos e fundamentais da linguagem **Javascript**, O **TypeScript** apenas faz uma tipagem mais rígida desses valores. Os tipos primitivos mais conhecidos são:
-- **String**
+- ### String:
   - A **String** é um tipo de dado que representa texto, ela é escrito colocando os caracteres entre apas como: apas duplas (""), simples ('') ou crases (``), qualquer caractere escrito dentro deles será considerado uma **string** inclusive números.
   - Exemplo:
    ``` ts
@@ -126,7 +126,7 @@ node arquivo.js
    // string usando crases:
     nome_usuario = `Garibaldo`
    ````
-- **Number**:
+- ### Number:
   - O **Number** é um tipo dado que representa qualquer valor númerico seja número inteiros, decimais ou número mais complexos, ele aceita qualque operação matemática como adição (`+`) subtração (`-`) divisão (`/`) multiplicação (`*`) e etc..
   - Exemplo:
   ``` ts
@@ -145,22 +145,21 @@ node arquivo.js
        console.log(numero) // Vai escrever no terminal: 22
        ```
    - `console.log()` usamos pra escrever no terminal, o conteúdo sempre fica entre parenteses.
-- **Boolean*
+- ### Boolean:
   - O **Boolean** é um tipo de dado que só tem dois valores, sendo eles ``true``(verdadeiro) ou ``false``(falso). Ela é usado quando precisamos tomar decisões importantes no nosso código, como por exemplo comparar valores ou verificar se uma função é verdadeira.
 - ## Tipagem de variáveis
-  Agora que aprendemos os tipos principais e o que é uma variável, vamos definir o tipo de uma váriavel. Antes devemos entender a diferença entre tipagem dinâmica e tipaem estatica:
-    -  **Tipagem dinâmica:**
-    -  **Tipagem statica:**
+  Agora que aprendemos os tipos primitivos e o que é uma variável, vamos definir o tipo de uma variável. Antes disso, precisamos entender a diferença entre tipagem dinâmica e tipagem estática:
+    -  ### Tipagem dinâmica:
+        A tipagem dinâmica dá mais liberdade sobre o dado que uma variável pode receber. Ela está presente em muitas linguagens, como o **JavaScript**. Nelas, você pode atribuir qualquer tipo de dado à mesma variável, seja string, number, boolean etc. Ou seja, você pode ter uma variável que antes guardava um número e depois passar a guardar uma string, o tipo dela muda de acordo com o valor que está armazenando no momento.
+    -  ### Tipagem statica:
+        Na tipagem estática, que é justamente a tipagem do TypeScript, também chamada de tipagem forte precisamos declarar o tipo da variável, o tipo deve ser único não pode ser mudado, ou seja, diferente da tipagem dinâmica, por exemplo quando declaramos uma variável do tipo number e depois colocamos ela pra receber uma string ou qualquer tipo diferente, o compilador irá apresentar erro, pois as variáveis só irá aceitar dados do seu tipo.
+        -  **Declarando o Tipo de uma Variável**:
+            -  No **TypeScritp** quando criamos uma variável e atribuimos um valor, ela automaticamente irá se tornar uma várivel do tipo do primero valor que ela receber, por exemplo: `let nome = "Jose"`; nesse caso a variável terá seu tipo definido como string, e caso tente atribuir um tipo de dado diferente a ela, não irá funcinar.
+            - Podemos definir seu tipo sem necessariamente adicona um valor, dessa forma: `let numero: number;` ou `let nome: string = "Jose"`; essa é forma mais recomendada e usada, sempre que for declarar uma variável declare o seu tipo dessa forma.
+
 exemplos/hello_world.tse
 
 exemplos/variaveis_e_tipos.ts
-
-Atualizar o README com:
-
-Seção "Tipos básicos"
-
-Seção "Exemplos: variáveis"
-
 -------------------------------------------- 3
 # **Estruturas Condicionais no TypeScript**
 
