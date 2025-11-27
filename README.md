@@ -156,7 +156,7 @@ node arquivo.js
         -  **Declarando o Tipo de uma Variável**:
             -  No **TypeScritp** quando criamos uma variável e atribuimos um valor, ela automaticamente irá se tornar uma várivel do tipo do primero valor que ela receber, por exemplo: `let nome = "Jose"`; nesse caso a variável terá seu tipo definido como string, e caso tente atribuir um tipo de dado diferente a ela, não irá funcinar.
             - Podemos definir seu tipo sem necessariamente adicona um valor, dessa forma: `let numero: number;` ou `let nome: string = "Jose"`; essa é forma mais recomendada e usada, sempre que for declarar uma variável declare o seu tipo dessa forma.
-
+[Exemplo](Exemplos)
 exemplos/hello_world.tse
 
 exemplos/variaveis_e_tipos.ts
