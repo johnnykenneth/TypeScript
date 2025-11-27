@@ -254,7 +254,7 @@ Quando usar cada um
 Importância: Mostra estruturas de repetição essenciais.
 
 -------------------------------------------- 5
-# **Funções, Instalação e Execução**
+# **Funções**
 
 ## **Funções em TypeScript**
 
@@ -262,9 +262,10 @@ As funções são blocos de código que executam uma tarefa específica.
 No TypeScript, podemos definir tipos para os parâmetros e para o retorno, deixando o código mais seguro e evitando erros durante o desenvolvimento.
 
 ## **Importância das funções**
-São o parâmetro principal onde a tipagem estática ocorre. Seu modo de funcionamento é quase igual a o java script basico, nele você define um tipo de parâmetro e uma variavel e então no final define o retun, assim fazendo com que  a função "retorne" o valor escrito para a variável da função assim fazendo-a funcionar e assim aplicando a tipagem estática , além de possibilitar a reutilização de varíaveis previamente criadas sem precisar definilas denovo.
+As funções são o principal ponto onde a tipagem estática atua. Seu modo de funcionamento é quase igual ao java script basico, nele Você define o tipo de cada parâmetro e também o tipo do valor que a função deve retornar. Assim, o retorno entrega o valor para quem chamou a função, aplicando a tipagem estática e garantindo segurança no código , além de possibilitar a reutilização de blocos previamente criados sem precisar repeti-los.
 
 ### **Função simples**
+A função simples é a mais básica. Primeiro declaramos seu nome, depois definimos um parâmetro (com o tipo dele) e, por fim, o tipo do retorno, neste exemplo de codigo ela retornara um simples olá, com o nome escrito pelo usuario
 
 ```ts
 function saudacao(nome: string): string {
@@ -273,6 +274,7 @@ function saudacao(nome: string): string {
 ```
 
 ### **Parâmetros tipados**
+a função com parâmetros tipados especifica o tipo dos dois parametros, assim evitando algum possivel erro de tipagem ao um valor incorreto ser passado a ela, por exemplo neste codigo aqui, essa função somar exige que o tipo dos dois parametros sejam do tipo **number** ,pois ela ira retornar uma soma desses dois parametros
 
 ```ts
 function somar(a: number, b: number): number {
@@ -281,6 +283,7 @@ function somar(a: number, b: number): number {
 ```
 
 ### **Retorno tipado**
+a função recebe um número e retorna outro número. Caso você tentasse retornar um valor de outro tipo, o TypeScript avisaria imediatamente. Isso torna o código mais prevísivel.
 
 ```ts
 function dobrar(valor: number): number {
@@ -289,6 +292,7 @@ function dobrar(valor: number): number {
 ```
 
 ### **Parâmetro opcional**
+O msg? significa que esse parâmetro é opcional. Se a função for chamada sem argumento, ela usa a expressão ?? para exibir um texto padrão. O tipo **void** indica que a função não retorna nada, apenas executa uma ação no console.
 
 ```ts
 function mostrarMensagem(msg?: string): void {
@@ -297,7 +301,7 @@ function mostrarMensagem(msg?: string): void {
 ```
 
 ### **Valor padrão**
-
+Se ninguém passar um nome para a função, ela usará "Visitante". Assim como neste exemplo de função, o retorno é void, indicando que nada é devolvido pela função. Extremamente util caso exista a chance de um dado não ser informado.
 ```ts
 function apresentar(nome: string = "Visitante"): void {
   console.log(`Bem-vindo, ${nome}`);
@@ -306,10 +310,16 @@ function apresentar(nome: string = "Visitante"): void {
 
 ### **Arrow function**
 
+Essa função usa a sintaxe de seta => característica das arrow functions(função seta). Os parâmetros possuem tipos definidos e o retorno também é tipado. Apesar da sintaxe menor, ela funciona da mesma maneira que funções tradicionais e aplica perfeitamente a tipagem estática do TypeScript.
+
 ```ts
 const multiplicar = (a: number, b: number): number => {
   return a * b;
 };
 ```
+
+### 
+
+
 
 
