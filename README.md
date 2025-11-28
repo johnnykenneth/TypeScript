@@ -166,7 +166,7 @@ node arquivo.js
 
   - ### Exemplo de variavei com tipos:
     - Agora que aprendemos o básico sobre variáveis e tipos, vamos vê alguns exemplos bacanas de como podemos usar elas no nosso código:
-      [Usando variáveis no TypeScritp](Exemplos/variaveis.js)
+      [Usando variáveis no TypeScritp](Exemplos/variaveis.ts)
 
 ## Operadores básicos
   - Em qualquer linguagem de programação existem operações com números, e no TypeScript não é diferente. As operações mais básicas são: adição (+), subtração (-), divisão (/), resto da divisão (%), multiplicação (*) e potência (**). É importante ficar atento à ordem de precedência, representada na tabela abaixo:
@@ -180,7 +180,7 @@ node arquivo.js
     |adição, subtração| +, -        |
 
  - **Aqui vai alguns exemplos de como usar:**
-  [Usando operados matemáticos no TypeScript](Exemplos/Operadores.js)
+  [Usando operados matemáticos no TypeScript](Exemplos/operadores.ts)
 
 -------------------------------------------- 3
 # **Estruturas Condicionais no TypeScript**
