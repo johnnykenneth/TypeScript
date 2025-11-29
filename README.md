@@ -195,7 +195,7 @@ Estruturas condicionais permitem que o programa tome decisões com base em condi
  - se(if) estiver chovendo -> você irá voltar para pegar o guarda-chuva
  - se não(else) estiver chovendo -> você poderá sair
    
-<code>
+``` ts
  let chovendo: boolean = true;
  let pegarGuardaChuva: boolean;
 
@@ -204,14 +204,14 @@ Estruturas condicionais permitem que o programa tome decisões com base em condi
  } else {
    pegarGuardaChuva = false;
  }
-</code>
+```
 
-Ou por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas da sua família podem ou não votar, ao perguntar você terá as condições:
+Também caso a condição primeira não for atendida é possível adicionar mais uma condição a ser verificada em seguida, por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas da sua família podem ou não votar, ao perguntar você terá as condições:
  - se(if) a idade for maior ou igual a 18 -> é maior de idade e pode votar
  - se não, verifique se(else if) a idade for maior ou igual a 16 e menor que 18 -> pode votar mas ainda não é maior de idade
  - se não(else) é menor de idade
 
-<code>
+``` ts
  const idade: number = 17;
 
  if (idade >= 18) {
@@ -221,7 +221,58 @@ Ou por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas 
  } else {
    console.log("Você é menor de idade.");
  }
-</code>
+```
+
+### *Tá, mas por que isso é importante?*
+
+As estruturas condicionais definem como o programa reage a diferentes situações, permitindo criar:
+  - validações
+  - fluxos de decisão
+  - menus interativos
+  - regras de negócio
+Elas são fundamentais em qualquer linguagem de programação.
+
+## 🔗 **Operadores Lógicos nas Condicionais**
+
+Além das comparações básicas (>, <, ==, etc.), o TypeScript permite combinar condições usando **operadores lógicos**. Esses operadores ajudam a criar verificações mais completas e detalhadas.
+
+### **Principais operadores lógicos**
+
+| Operador | Nome        | O que faz                                                        | Exemplo                               |
+|----------|-------------|------------------------------------------------------------------|-----------------------------------------|
+| `&&`     | E lógico    | Verdadeiro somente se **todas** as condições forem verdadeiras    | `idade >= 18 && possuiDocumento`       |
+| `||`     | OU lógico   | Verdadeiro se **pelo menos uma** condição for verdadeira          | `temIngresso || estaNaLista`           |
+| `!`      | Negação     | Inverte o valor lógico (true → false / false → true)              | `!logado`                              |
+
+### **Exemplo prático**
+
+Imagine que você quer liberar o acesso a uma área restrita somente para quem **estiver logado** e **for administrador** em um sistema:
+
+```ts
+const logado = true;
+const admin = false;
+
+if (logado && admin) {
+  console.log("Acesso liberado para administradores.");
+} else {
+  console.log("Acesso negado: permissões insuficientes.");
+}
+```
+E um caso onde basta cumprir **uma** das condições:
+
+```ts
+const temIngresso = false;
+const estaNaLista = true;
+
+if (temIngresso || estaNaLista) {
+  console.log("Pode entrar.");
+} else {
+  console.log("Entrada não permitida.");
+}
+```
+
+ - **Aqui vai alguns exemplos de como usar:**
+  [Utilizando estruturas de condição e operadores lógicos em TypeScript](Exemplos/condicoes.ts)
 
 -------------------------------------------- 4 
 
