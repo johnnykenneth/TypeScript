@@ -337,9 +337,9 @@ while (c <= 5) {
 
 ``` ts
 while (condição) {
-  código a ser executado 
+  //código a ser executado 
   + 
-  incremento
+  //incremento
 }
 ```
 
@@ -351,9 +351,9 @@ while (condição) {
 
 ``` ts
 do {
-  código a ser executado 
+  //código a ser executado
   + 
-  incremento
+  //incremento
 } while (condição)
 ```
 
@@ -374,6 +374,88 @@ do {
 - Já quando utilizamos o do while, o teste lógico é feito no final e podemos ler o código da seguinte forma: "Execute o código, enquanto a condição for verdadeira".
 
 ### Por isso, fica a critério do usuário escolher qual dos dois utilizar, pois possuem a mesma lógica e ambos resultaram na mesma saída.
+
+### **FOR:**
+
+A laço de repetição FOR possui a mesma função do While, repetir informações de um código. O que difere um do outro é que o for, é ideal para iterações com um número de vezes determinado, diferente do While que é usado para repetições indeterminadas que dependem da condição.
+
+- #### Ele é utilizado especificamente para casos onde se sabe quantas vezes o código deve ser executado. Porém, assim como o while, temos que utilizar uma expressão de condição para determinar se o laço deve continuar a ser executado e essa condição é baseada no números de repetições que queremos dar ao _loop_.
+
+### O Funcionamento da Laço:
+
+- Sempre que utilizarmos o for, devemos seguir a seguinte estrutura:
+
+``` ts
+for (inicialização; condição; incremento) {
+  // Código a ser executado repetidamente
+}
+```
+***Obs: Sempre devemos seguir essa ordem de precedência, não podemos alterá-la!**
+
+Explicando:
+
+- **Inicialização:** determina o valor inicial da variável que conttralará a contagem do _loop_, a essa variável, damos o nome de variável de controle.
+- **condição:** ocorre a validação da condição: 
+  - Se ela for verdadeira, o bloco de código do for é executado.
+  - Se ela for falsa, o laço é encerrado e o programa continua após o bloco for.
+- **Incremento:** se a condição for verdadeira a cada iteração, é adicionado o incremento de 1 ao valor da variável de conntrole.
+
+Isso se repete, em _loop_, até que a condição seja falsa, ou seja, até que a variável de controle chegue não pertença mais ao intervalo de números predefinidos na condição.
+
+Exemplo:
+
+``` ts
+for (let c: number = 0; c < 10; c++) {
+    console.log(c)
+}
+```
+No exemplo acima, temos:
+
+- Inicialização: let c: number = 0;
+- Condição: c < 10;
+- Incremento: c++.
+
+#### A variável de controle c, inicialmete definida com o valor 0, faz a verificação da condição, como c = 0 e 0 < 10, então c é menor que 10, por isso, a condição é verdadeira. Logo, o código imprimirá o valor 0, então haverá o incremento de 1 ao valor de c que agora será 1, depois disso, o _loop_ é refeito já que a condição foi verdadeira. A variável de controle, agora com valor = 1 fará mais uma vez a verificação da condição, c = 1 e 1 < 10, então c é menor que 10, o que satisfaz a condição e a mesma coisa acontece, o console imprimirá o valor 1, o incremento de 1 será adicionado ao valor de c que agora será 2 e o _loopp_ é refeito. 
+
+#### Isso acontecerá **Até que** c possua um valor que não seja menor que 10, então quando c = 10, a iteração do exemplo anterior é interrompida e o laço é encerrado. A saída para esse exemplo será os números de 0 até 9.
+
+Se quisermos imprimir os números de 0 a 10, basta adicionar o "=" na condição:
+
+``` ts
+for (let c: number = 0; c <= 10; c++) {
+    console.log(c)
+}
+```
+
+Note que, ao usar o for não utilizamos a palavra enquanto, pois há uma quantidade especifica de vezes que queremos realizar aquela iteração, que nesse caso foi 10, mas sequiséssemos que fosse de 1 até 20, por exemplo, era só colocar no código o valor 20 na condição. Perceba que há a diferença:
+
+- Para o for, podemos interpretá-lo como: "Execute esse comando até que a variável de controle seja (limite determinado)"
+- Para o While, podemos interpretá-lo como: "Enquanto a condição for verdadeira execute esse comando (não há um limite determinado)"
+
+### Quando utilizar for ou While:
+
+- Utilize **For** quando souber o limite de iterações, ou seja, quando souber a quantidade de repetições que deseja executar.
+- Utilize o **While** quando não souber o limite de iterações, ou seja, quando não souber a quantidade de repetições que deseja executar.
+
+### Observaações:
+
+#### (1) Tome muito CUIDADO para não executar _loops_ infinitos! Um _loop_ infinito ocorre quando um bloco de código de repetição é executado infinitas vezes porque a condição de saída nunca é alcançada, pois a validação da condição é sempre verdadeira.
+
+Ex.:
+
+``` ts
+let c: number = 1
+
+while (c < 5) {
+    console.log(c)
+}
+```
+
+Perceba que nesse bloco não há o incremento c++, e por causa disso, esse código nos levaria para um _lopp_ infinito, uma vez que o valor de c é definido como igual 1 e esse valor é sempre < 5, ou seja, como não há nennhum incremento ao valor de c ele nunca deixará de ser menor que 5, então esse código resultará em infinitas impressões do número 1 no console. O que é um _loop_ infinito.
+
+Tome muito cuidado para não cair em laços infinitos, uma maneira de contornar isso é sempre definir um incremento (n++) dentro da estrutura de repetição de cado laço!
+
+#### (2) O laço de repetição For também pode ser usado para percorrer arrays ou listas. Essa é uma funcionalidade extremamente importante e que aprenderemos a seguir
 
 while
 
