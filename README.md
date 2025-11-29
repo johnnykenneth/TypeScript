@@ -284,33 +284,96 @@ if (temIngresso || estaNaLista) {
 
 Um laço de repetição (ou _loop_) é uma estrutura que permite que um conjunto de instruções ou um bloco de código seja executado repetidamente com base em uma condição estabelecida ou um número predefinido de vezes. Em linhas gerais, um laço de repetição é uma forma de se repertir um comando a quantidade de vezes que você desejar.
 
-## **Como funciona um laço de repetição?**
+## **Como funciona um laço de repetição em TypeScript?**
 
-1º Definimos uma variável de controle ou contador para começar.
+Assim como em outras linguagens, existem dois tipos de laços de repetição no TypeScript:
 
-2° Nós definimos uma condição ou um número de vezes que queremos realizar as repetições.
+- A estrutura WHILE;
+- A estrutura FOR.
 
-3º A variável de controle, já definida, pode fazer 2 coisas:
+Essas estruturas são semelhantes, mas possuem suas diferenças. Vamos entender como cada uma funciona:
 
-1. Se definirmos uma condição no 2º passo: 
-    - A variável de controle é responsável por realizar a verificação dessa condição até quando ela for verdadeira. Ou seja, **Enquanto** ela for Verdadeira, a variável de controle executa o comando que o usuário defenir, quando ela for Falsa, o loop é encerrado. Então, o código definido no loop é executado repetidas vezes até que a condição seja falsa.
-    
-2. Se pré-definirmos um número de repetições:
-    - A variável de controle executa o comando a quantidade de vezes definida pelo usuário, o que chamamos de intervalo.
+### **WHILE:**
 
-## **Qual a principal função de um laço de repetição?**
+  Antes de começar, vale destacar que ambas as estrutras utilizam a validação de uma condição ou teste lógico para realizar suas iterações. Para o While, esse teste lógico é feito da seguinte forma: 
 
-A sua principal função é ser a peça-chave para realizar uma Iteração. 
+- **ENQUANTO** a condição estabelecida for verdadeira, execute o comando que o usuário definir. Ou seja, com o While, enquanto o teste lógico verificar que a condição estabelecida é verdadeira, o comando é executado, quando for falsa, o _loop_ é encerrado.
 
-Mas o que é uma Iteração?
+Podemos vizualizar da seguinte forma:
 
-## **O que é Iteração?**
+``` ts
+let c: number = 1
 
-É o processo de repetição de um código, intrução ou comando dentro de um programa. Resumindo, o 3º passo que definimos anteriormente é uma Iteração, pois a variável de controle verifica a condição, por exemplo, e se esta for verdadeira ele executa o código repetidas vezes, esse processo de repetição é uma Iteração. 
+while (c < 5) {
+    console.log(c)
+    c++
+}
+``` 
 
-Uma Iteração é algo fundamental para uma linguagem de programação, pois facilita a realização de códigos e comandos longos.
+let c: number = 1 - variável c, do tipo number, e atribuímos a ela o valor 1; 
 
-## **Bem, agora que entendemos o que é um laço de repetição e uma iteração, vamos ver como podemos executar laços na linguagem TypeScript:**
+while (c < 5) - laço While que podemos ler como: Enquanto c for menor que 5, execute o comando console.log(c);
+
+c++ - o incremento c++ que podemos ler como: a cada iteração(laço), incremente 1 ao valor de c.
+
+Explicando:
+
+#### A variável c, que possui o valor 1, é utilizada para fazer a validação da condição: enquanto c for menor que 5. Dentro do laço while, delimitado pelas chaves, colocamos o comando que desejamos que seja executado enquanto a condição for verdadeira e ainda dentro do while adicionamos o incremento c++ (c = c + 1) que serve para incrementar o valor 1 à variável c enquanto a condição for verdadeira.
+
+#### Então o que acontece no código acima é: c é inicialmente definida como 1 e no teste lógico queremos que imprimir todos os valores que forem menor que 5, assim, como o valor inicial de c é menor que 5, a condição é verdadeira, 1 < 5. Logo, o código imprimirá o valor 1, então haverá o incremento de 1 ao valor de c que agora será 2, depois disso, o _loop_ é refeito já que a condição foi verdadeira e agora o teste lógico será feito com o valor 2 que continua sendo menor que 5, então a mesma coisa acontece, imprimi-se o númerro 2, acontece o incremento e o _loop_ é refeito. Isso acontece enquanto a condição for verdadeira quando o valor de c for 5, ele fará o teste mais uma vez e agora o valor 5 não é menor que 5, então a condição é falsa e só agora o _loop_ é encerrado e a saída desse código é a impressão na tela dos nnúmeros de 1 até 4.
+
+Se quisermos imprimir os números de 1 até 5, basta adicionar o "=" no teste lógico:
+
+``` ts
+let c: number = 1
+
+while (c <= 5) {
+    console.log(c)
+    c++
+}
+```
+
+### **Para esse tipo de Laço de Repetição damos o nome de Estrutura de Repetição com Teste Lógico no Início e esse tipo sempre seguirá a seguinte forma:**
+
+``` ts
+while (condição) {
+  código a ser executado 
+  + 
+  incremento
+}
+```
+
+### Existe também um outro tipo de estrutura while:
+
+### **Estrutura de Repetição com Teste Lógico no Final**
+
+- ### Ele segue a mesma lógica do outro tipo, a qual já detalhamos acima, a única coisa que muda é a ordem em que o teste lógico é executado, esse tipo de estrutura sempre seguirá a seguinte forma:
+
+``` ts
+do {
+  código a ser executado 
+  + 
+  incremento
+} while (condição)
+```
+
+Exemplo: 
+
+``` ts
+let c: number = 1
+
+do {
+    console.log(c)
+    c++
+} while (c <= 5)
+```
+
+### Note que a única coisa que mudou foi a posição onde o teste lógico foi colocado, mas o raciocínio e a lógica são as mesmas:
+
+- Quando usamos While, colocamos o teste lógico é feito no início e podemos ler o código da seguinte forma: "Enquanto a condição for verdadeira, execute o código";
+- Já quando utilizamos o do while, o teste lógico é feito no final e podemos ler o código da seguinte forma: "Execute o código, enquanto a condição for verdadeira".
+
+### Por isso, fica a critério do usuário escolher qual dos dois utilizar, pois possuem a mesma lógica e ambos resultaram na mesma saída.
 
 while
 
