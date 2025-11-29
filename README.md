@@ -233,17 +233,18 @@ As estruturas condicionais definem como o programa reage a diferentes situaçõe
     
 Elas são fundamentais em qualquer linguagem de programação.
 
-## 🔗 **Operadores Lógicos nas Condicionais**
+## **Operadores Lógicos nas Condicionais**
 
 Além das comparações básicas (>, <, ==, etc.), o TypeScript permite combinar condições usando **operadores lógicos**. Esses operadores ajudam a criar verificações mais completas e detalhadas.
 
 ### **Principais operadores lógicos**
 
-| Operador | Nome        | O que faz                                                        | Exemplo                               |
-|----------|-------------|------------------------------------------------------------------|-----------------------------------------|
-| `&&`     | E lógico    | Verdadeiro somente se **todas** as condições forem verdadeiras    | `idade >= 18 && possuiDocumento`       |
-| `||`     | OU lógico   | Verdadeiro se **pelo menos uma** condição for verdadeira          | `temIngresso || estaNaLista`           |
-| `!`      | Negação     | Inverte o valor lógico (true → false / false → true)              | `!logado`                              |
+| Operador | Nome        | O que faz                                      | Exemplo                     |
+|----------|-------------|------------------------------------------------|-----------------------------|
+| `&&`     | E lógico    | Verdadeiro se **todas** as condições forem verdadeiras | `idade >= 18 && cadastrado` |
+| `\|\|`     | OU lógico   | Verdadeiro se **pelo menos uma** condição<br> for verdadeira |  `temIngresso \|\| estaNaLista`    |
+| `!`      | Negação     | Inverte o valor lógico                          | `!logado`                   |
+
 
 ### **Exemplo prático**
 
