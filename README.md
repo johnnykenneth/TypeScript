@@ -230,6 +230,7 @@ As estruturas condicionais definem como o programa reage a diferentes situaçõe
   - fluxos de decisão
   - menus interativos
   - regras de negócio
+    
 Elas são fundamentais em qualquer linguagem de programação.
 
 ## 🔗 **Operadores Lógicos nas Condicionais**
