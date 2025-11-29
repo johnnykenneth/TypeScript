@@ -206,7 +206,7 @@ Estruturas condicionais permitem que o programa tome decisões com base em condi
  }
 ```
 
-Também caso a condição primeira não for atendida é possível adicionar mais uma condição a ser verificada em seguida, por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas da sua família podem ou não votar, ao perguntar você terá as condições:
+Também caso a condição primeira não for atendida é possível adicionar mais uma condição a ser verificada em seguida, por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas da sua família podem ou não votar, ao perguntar você terá as condições/possibilidades:
  - se(if) a idade for maior ou igual a 18 -> é maior de idade e pode votar
  - se não, verifique se(else if) a idade for maior ou igual a 16 e menor que 18 -> pode votar mas ainda não é maior de idade
  - se não(else) é menor de idade
