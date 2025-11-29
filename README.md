@@ -278,11 +278,21 @@ if (temIngresso || estaNaLista) {
 
 -------------------------------------------- 4 
 
-# **Loops e interação:**
+# **Loops e Iteração:**
 
 ## **O que é um Laço de Repetição?**
 
 Um laço de repetição (ou _loop_) é uma estrutura que permite que um conjunto de instruções ou um bloco de código seja executado repetidamente com base em uma condição estabelecida ou um número predefinido de vezes. Em linhas gerais, um laço de repetição é uma forma de se repertir um comando a quantidade de vezes que você desejar.
+
+## **Qual a principal função de um laço de repetição?**
+
+- A sua principal função é ser a peça-chave para realizar uma Iteração.
+
+Mas o que é uma Iteração?
+
+## **Iteração**
+
+- É o processo de repetição de um código, instrução ou comando dentro de um programa.
 
 ## **Como funciona um laço de repetição em TypeScript?**
 
@@ -295,7 +305,7 @@ Essas estruturas são semelhantes, mas possuem suas diferenças. Vamos entender 
 
 ### **WHILE:**
 
-  Antes de começar, vale destacar que ambas as estrutras utilizam a validação de uma condição ou teste lógico para realizar suas iterações. Para o While, esse teste lógico é feito da seguinte forma: 
+  Antes de começar, vale destacar que ambas as estrutras utilizam a validação de uma condição ou um teste lógico para realizar suas iterações. Para o While, esse teste lógico é feito da seguinte forma: 
 
 - **ENQUANTO** a condição estabelecida for verdadeira, execute o comando que o usuário definir. Ou seja, com o While, enquanto o teste lógico verificar que a condição estabelecida é verdadeira, o comando é executado, quando for falsa, o _loop_ é encerrado.
 
@@ -320,7 +330,7 @@ Explicando:
 
 #### A variável c, que possui o valor 1, é utilizada para fazer a validação da condição: enquanto c for menor que 5. Dentro do laço while, delimitado pelas chaves, colocamos o comando que desejamos que seja executado enquanto a condição for verdadeira e ainda dentro do while adicionamos o incremento c++ (c = c + 1) que serve para incrementar o valor 1 à variável c enquanto a condição for verdadeira.
 
-#### Então o que acontece no código acima é: c é inicialmente definida como 1 e no teste lógico queremos que imprimir todos os valores que forem menor que 5, assim, como o valor inicial de c é menor que 5, a condição é verdadeira, 1 < 5. Logo, o código imprimirá o valor 1, então haverá o incremento de 1 ao valor de c que agora será 2, depois disso, o _loop_ é refeito já que a condição foi verdadeira e agora o teste lógico será feito com o valor 2 que continua sendo menor que 5, então a mesma coisa acontece, imprimi-se o númerro 2, acontece o incremento e o _loop_ é refeito. Isso acontece enquanto a condição for verdadeira quando o valor de c for 5, ele fará o teste mais uma vez e agora o valor 5 não é menor que 5, então a condição é falsa e só agora o _loop_ é encerrado e a saída desse código é a impressão na tela dos nnúmeros de 1 até 4.
+#### Então o que acontece no código acima é: c é inicialmente definida como 1 e no teste lógico queremos imprimir todos os valores que forem menor que 5, assim, como o valor inicial de c é menor que 5, a condição é verdadeira, 1 < 5. Logo, o código imprimirá o valor 1, então haverá o incremento de 1 ao valor de c que agora será 2, depois disso, o _loop_ é refeito já que a condição foi verdadeira e agora o teste lógico será feito com o valor 2 que continua sendo menor que 5, então a mesma coisa acontece, imprimi-se o númerro 2, acontece o incremento e o _loop_ é refeito. Isso acontece enquanto a condição for verdadeira, quando o valor de c for 5, ele fará o teste mais uma vez e agora o valor 5 não é menor que 5, então a condição é falsa e só agora o _loop_ é encerrado e a saída desse código é a impressão na tela dos nnúmeros de 1 até 4.
 
 Se quisermos imprimir os números de 1 até 5, basta adicionar o "=" no teste lógico:
 
@@ -345,7 +355,7 @@ while (condição) {
 
 ### Existe também um outro tipo de estrutura while:
 
-### **Estrutura de Repetição com Teste Lógico no Final**
+### **Estrutura de Repetição com Teste Lógico no Final (do while)**
 
 - ### Ele segue a mesma lógica do outro tipo, a qual já detalhamos acima, a única coisa que muda é a ordem em que o teste lógico é executado, esse tipo de estrutura sempre seguirá a seguinte forma:
 
@@ -370,10 +380,11 @@ do {
 
 ### Note que a única coisa que mudou foi a posição onde o teste lógico foi colocado, mas o raciocínio e a lógica são as mesmas:
 
-- Quando usamos While, colocamos o teste lógico é feito no início e podemos ler o código da seguinte forma: "Enquanto a condição for verdadeira, execute o código";
+- Quando usamos While, o teste lógico é feito no início e podemos ler o código da seguinte forma: "Enquanto a condição for verdadeira, execute o código";
 - Já quando utilizamos o do while, o teste lógico é feito no final e podemos ler o código da seguinte forma: "Execute o código, enquanto a condição for verdadeira".
 
 ### Por isso, fica a critério do usuário escolher qual dos dois utilizar, pois possuem a mesma lógica e ambos resultaram na mesma saída.
+
 
 ### **FOR:**
 
@@ -390,17 +401,17 @@ for (inicialização; condição; incremento) {
   // Código a ser executado repetidamente
 }
 ```
-***Obs: Sempre devemos seguir essa ordem de precedência, não podemos alterá-la!**
+***Obs: Sempre devemos seguir essa ordem de precedência, não podemos alterá-la! E sempre separamos elas por " ; ".**
 
 Explicando:
 
-- **Inicialização:** determina o valor inicial da variável que conttralará a contagem do _loop_, a essa variável, damos o nome de variável de controle.
+- **Inicialização:** determina o valor inicial da variável que contralará a contagem do _loop_, a essa variável, damos o nome de variável de controle.
 - **condição:** ocorre a validação da condição: 
   - Se ela for verdadeira, o bloco de código do for é executado.
   - Se ela for falsa, o laço é encerrado e o programa continua após o bloco for.
-- **Incremento:** se a condição for verdadeira a cada iteração, é adicionado o incremento de 1 ao valor da variável de conntrole.
+- **Incremento:** se a condição for verdadeira a cada iteração, é adicionado o incremento de 1 ao valor da variável de controle.
 
-Isso se repete, em _loop_, até que a condição seja falsa, ou seja, até que a variável de controle chegue não pertença mais ao intervalo de números predefinidos na condição.
+Isso se repete, em _loop_, até que a condição seja falsa, ou seja, até que a variável de controle não pertença mais ao intervalo de números predefinidos na condição.
 
 Exemplo:
 
@@ -415,7 +426,7 @@ No exemplo acima, temos:
 - Condição: c < 10;
 - Incremento: c++.
 
-#### A variável de controle c, inicialmete definida com o valor 0, faz a verificação da condição, como c = 0 e 0 < 10, então c é menor que 10, por isso, a condição é verdadeira. Logo, o código imprimirá o valor 0, então haverá o incremento de 1 ao valor de c que agora será 1, depois disso, o _loop_ é refeito já que a condição foi verdadeira. A variável de controle, agora com valor = 1 fará mais uma vez a verificação da condição, c = 1 e 1 < 10, então c é menor que 10, o que satisfaz a condição e a mesma coisa acontece, o console imprimirá o valor 1, o incremento de 1 será adicionado ao valor de c que agora será 2 e o _loopp_ é refeito. 
+#### A variável de controle c, inicialmete definida com o valor 0, faz a verificação da condição, como c = 0 e 0 < 10, então c é menor que 10, por isso, a condição é verdadeira. Logo, o código imprimirá o valor 0, então haverá o incremento de 1 ao valor de c que agora será 1, depois disso, o _loop_ é refeito já que a condição foi verdadeira. A variável de controle, agora com valor = 1 fará mais uma vez a verificação da condição, c = 1 e 1 < 10, então c é menor que 10, o que satisfaz a condição e a mesma coisa acontece, o console imprimirá o valor 1, o incremento de 1 será adicionado ao valor de c que agora será 2 e o _loop_ é refeito. 
 
 #### Isso acontecerá **Até que** c possua um valor que não seja menor que 10, então quando c = 10, a iteração do exemplo anterior é interrompida e o laço é encerrado. A saída para esse exemplo será os números de 0 até 9.
 
@@ -427,7 +438,7 @@ for (let c: number = 0; c <= 10; c++) {
 }
 ```
 
-Note que, ao usar o for não utilizamos a palavra enquanto, pois há uma quantidade especifica de vezes que queremos realizar aquela iteração, que nesse caso foi 10, mas sequiséssemos que fosse de 1 até 20, por exemplo, era só colocar no código o valor 20 na condição. Perceba que há a diferença:
+Note que, ao usar o for não utilizamos a palavra **enquanto**, pois há uma quantidade específica de vezes que queremos realizar aquela iteração, que nesse caso foi 10, mas sequiséssemos que fosse de 1 até 20, por exemplo, era só colocar no código o valor 20 na condição. Perceba que há a diferença:
 
 - Para o for, podemos interpretá-lo como: "Execute esse comando até que a variável de controle seja (limite determinado)"
 - Para o While, podemos interpretá-lo como: "Enquanto a condição for verdadeira execute esse comando (não há um limite determinado)"
@@ -437,7 +448,7 @@ Note que, ao usar o for não utilizamos a palavra enquanto, pois há uma quantid
 - Utilize **For** quando souber o limite de iterações, ou seja, quando souber a quantidade de repetições que deseja executar.
 - Utilize o **While** quando não souber o limite de iterações, ou seja, quando não souber a quantidade de repetições que deseja executar.
 
-### Observaações:
+### Observações:
 
 #### (1) Tome muito CUIDADO para não executar _loops_ infinitos! Um _loop_ infinito ocorre quando um bloco de código de repetição é executado infinitas vezes porque a condição de saída nunca é alcançada, pois a validação da condição é sempre verdadeira.
 
@@ -451,27 +462,12 @@ while (c < 5) {
 }
 ```
 
-Perceba que nesse bloco não há o incremento c++, e por causa disso, esse código nos levaria para um _lopp_ infinito, uma vez que o valor de c é definido como igual 1 e esse valor é sempre < 5, ou seja, como não há nennhum incremento ao valor de c ele nunca deixará de ser menor que 5, então esse código resultará em infinitas impressões do número 1 no console. O que é um _loop_ infinito.
+Perceba que nesse bloco não há o incremento c++, e por causa disso, esse código nos levaria para um _loop_ infinito, uma vez que o valor de c é definido como igual 1 e esse valor é sempre < 5, ou seja, como não há nennhum incremento ao valor de c, ele nunca deixará de ser menor que 5, então esse código resultará em infinitas impressões do número 1 no console. O que é um _loop_ infinito.
 
 Tome muito cuidado para não cair em laços infinitos, uma maneira de contornar isso é sempre definir um incremento (n++) dentro da estrutura de repetição de cado laço!
 
-#### (2) O laço de repetição For também pode ser usado para percorrer arrays ou listas. Essa é uma funcionalidade extremamente importante e que aprenderemos a seguir
+#### (2) O laço de repetição For também pode ser usado para percorrer arrays ou listas. Essa é uma funcionalidade extremamente importante e que aprenderemos logo a seguir!
 
-while
-
-Iteração básica
-
-Criar e commitar:
-
-exemplos/loops.ts
-
-Atualizar o README com:
-
-Tipos de loops
-
-Quando usar cada um
-
-Importância: Mostra estruturas de repetição essenciais.
 
 -------------------------------------------- 5
 # **Funções**
