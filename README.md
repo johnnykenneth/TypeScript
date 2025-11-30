@@ -151,7 +151,7 @@ node arquivo.js
 - ### Boolean:
   - O **Boolean** é um tipo de dado que só tem dois valores, sendo eles ``true``(verdadeiro) ou ``false``(falso). Ela é usado quando precisamos tomar decisões importantes no nosso código, como por exemplo comparar valores ou verificar se uma função é verdadeira.
 
-- ### Entrada e Saída de Dados:
+## Entrada e Saída de Dados:
   Para que um programa seja útil, ele geralmente precisa se comunicar com o mundo exterior. Ele precisa receber informações (Entrada/Input) e mostrar resultados (Saída/Output). Vamos entender como fazer isso no TypeScript rodando no ambiente Node.js.
 
 - ## Saída de Dados (Output):
