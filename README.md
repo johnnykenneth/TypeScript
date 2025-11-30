@@ -204,37 +204,6 @@ rl.question('Qual é o seu nome? ', (resposta) => {
   rl.close();
 });
 ```
-- ## Arrays e Interfaces:
-- Arrays (Listas): Muitas vezes precisamos guardar vários dados em uma única variável, para isso usamos os Arrays (listas), no TypeScript, definimos o tipo do dado seguido de [].
-
-``` ts
-// Lista de números
-let notas: number[] = [10, 8, 7.5];
-
-// Lista de textos
-let nomes: string[] = ["Johnny", "José", "Pedro"];
-
-// Acessando um item (começa sempre do 0)
-console.log(nomes[0]); // Imprime: Johnny
-```
-
-- Interfaces (Objetos): Enquanto arrays guardam listas, os Objetos agrupam informações sobre uma coisa só (ex: um usuário tem nome, email e idade). As Interfaces servem para criar o "molde" desse objeto, garantindo que ele tenha todas as propriedades certas.
-
-``` ts
-// 1. Criamos o molde (Interface)
-interface Pessoa {
-  nome: string;
-  idade: number;
-}
-
-// 2. Criamos a variável usando esse molde
-let usuario: Pessoa = {
-  nome: "Johnny",
-  idade: 21
-};
-
-console.log(usuario.nome); // Imprime: Johnny
-```
 
 - ## Tipagem de variáveis
   Agora que aprendemos os tipos primitivos e o que é uma variável, vamos definir o tipo de uma variável. Antes disso, precisamos entender a diferença entre tipagem dinâmica e tipagem estática:
@@ -265,7 +234,7 @@ console.log(usuario.nome); // Imprime: Johnny
     |adição, subtração| +, -        |
 
  - **Aqui vai alguns exemplos de como usar:**
-  [Usando operados matemáticos no TypeScript](Exemplos/Operadores.ts)
+  [Usando operadores matemáticos no TypeScript](Exemplos/Operadores.ts)
 
 # **Estruturas Condicionais no TypeScript**
 
@@ -588,6 +557,38 @@ Tome muito cuidado para não cair em laços infinitos, uma maneira de contornar 
 
 #### (2) O laço de repetição For também pode ser usado para percorrer arrays ou listas. Essa é uma funcionalidade extremamente importante e que aprenderemos logo a seguir!
 
+- ## Arrays e Interfaces:
+- Arrays (Listas): Muitas vezes precisamos guardar vários dados em uma única variável, para isso usamos os Arrays (listas), no TypeScript, definimos o tipo do dado seguido de [].
+
+``` ts
+// Lista de números
+let notas: number[] = [10, 8, 7.5];
+
+// Lista de textos
+let nomes: string[] = ["Johnny", "José", "Pedro"];
+
+// Acessando um item (começa sempre do 0)
+console.log(nomes[0]); // Imprime: Johnny
+```
+
+- Interfaces (Objetos): Enquanto arrays guardam listas, os Objetos agrupam informações sobre uma coisa só (ex: um usuário tem nome, email e idade). As Interfaces servem para criar o "molde" desse objeto, garantindo que ele tenha todas as propriedades certas.
+
+``` ts
+// 1. Criamos o molde (Interface)
+interface Pessoa {
+  nome: string;
+  idade: number;
+}
+
+// 2. Criamos a variável usando esse molde
+let usuario: Pessoa = {
+  nome: "Johnny",
+  idade: 21
+};
+
+console.log(usuario.nome); // Imprime: Johnny
+```
+
 
 ### Bem, esse é um bom resumo sobre os laços de repetição do TypeScript. Agora, veja mais exemplos aprofundados nas pastas abaixo:
 
@@ -664,7 +665,3 @@ const multiplicar = (a: number, b: number): number => {
 
 
 ### 
-
-
-
-
