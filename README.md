@@ -136,7 +136,7 @@ node arquivo.js
   let numero1 = 2
   let numero2 = 3
   let numero = numero1 + numero2
-  console.log(numero) // Vais escrever no terminal: 5
+  console.log(numero) // Vai escrever no terminal: 5
   ```
   Observações importantes:
    - 2 é um Number (numero) e "2" é uma String, ou seja não é possive somar os dois como números, caso some será feita uma concatenação (junção de textos).
@@ -153,6 +153,92 @@ node arquivo.js
   - O **Boolean** é um tipo de dado que só tem dois valores, sendo eles ``true``(verdadeiro) ou ``false``(falso). Ela é usado quando precisamos tomar decisões importantes no nosso código, como por exemplo comparar valores ou verificar se uma função é verdadeira.
 - ## Tipagem de variáveis
   Agora que aprendemos os tipos primitivos e o que é uma variável, vamos definir o tipo de uma variável. Antes disso, precisamos entender a diferença entre tipagem dinâmica e tipagem estática:
+
+- ### Entrada e Saída de Dados:
+  Para que um programa seja útil, ele geralmente precisa se comunicar com o mundo exterior. Ele precisa receber informações (Entrada/Input) e mostrar resultados (Saída/Output). Vamos entender como fazer isso no TypeScript rodando no ambiente Node.js.
+
+- ## Saída de Dados (Output):
+A saída de dados é a forma como o programa "fala" com o usuário. No nosso caso, usamos o terminal para mostrar essas mensagens.
+
+console.log()
+O comando mais famoso e utilizado para isso é o console.log(), Ele serve para imprimir textos, números, variáveis ou resultados de contas no terminal.
+
+Como funciona: Tudo que você colocar dentro dos parênteses do console.log() será exibido.
+Exemplo:let mensagem: string = "Olá, TypeScript!";
+let nota: number = 10;
+``` ts
+// Imprimindo um texto direto
+console.log("Iniciando o sistema...");
+
+// Imprimindo variáveis
+console.log(mensagem);
+console.log(nota);
+
+// Imprimindo texto misturado com variáveis (Interpolação)
+console.log(`O aluno tirou nota: ${nota}`);
+```
+
+- ## Entrada de Dados (Input):
+A entrada de dados é a forma como o usuário "fala" com o programa. Diferente de algumas linguagens que possuem um comando simples como leia() ou input(), no TypeScript (usando Node.js), a entrada de dados nativa exige um pouquinho mais de código, pois o Node trabalha com eventos e para capturar o que o usuário digita no terminal, usamos um módulo nativo chamado readline.
+
+- Como usar o readline?
+Imagine o readline como um "porteiro" que fica observando o que você digita no teclado e avisa o programa quando você aperta "Enter". Para usá-lo, precisamos seguir 4 passos básicos que são: importar o módulo, criar a interface de comunicação, fazer a pergunta e fechar a comunicação.
+
+Exemplo prático:
+``` ts
+// 1. Importamos o módulo readline
+import * as readline from 'readline';
+
+// 2. Criamos a interface configurando a entrada (teclado) e saída (terminal)
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// 3. Fazemos a pergunta
+// O texto entre aspas é a pergunta que vai aparecer
+// A 'resposta' é a variável que vai guardar o que o usuário digitar
+rl.question('Qual é o seu nome? ', (resposta) => {
+  
+  // Aqui dentro acontece a mágica com o dado recebido
+  console.log(`Muito prazer, ${resposta}!`);
+
+  // 4. Fechamos a interface para encerrar o programa
+  rl.close();
+});
+```
+- ## Arrays e Interfaces:
+- Arrays (Listas): Muitas vezes precisamos guardar vários dados em uma única variável, para isso usamos os Arrays (listas), no TypeScript, definimos o tipo do dado seguido de [].
+
+``` ts
+// Lista de números
+let notas: number[] = [10, 8, 7.5];
+
+// Lista de textos
+let nomes: string[] = ["Johnny", "José", "Pedro"];
+
+// Acessando um item (começa sempre do 0)
+console.log(nomes[0]); // Imprime: Johnny
+```
+
+- Interfaces (Objetos): Enquanto arrays guardam listas, os Objetos agrupam informações sobre uma coisa só (ex: um usuário tem nome, email e idade). As Interfaces servem para criar o "molde" desse objeto, garantindo que ele tenha todas as propriedades certas.
+
+``` ts
+// 1. Criamos o molde (Interface)
+interface Pessoa {
+  nome: string;
+  idade: number;
+}
+
+// 2. Criamos a variável usando esse molde
+let usuario: Pessoa = {
+  nome: "Johnny",
+  idade: 21
+};
+
+console.log(usuario.nome); // Imprime: Johnny
+```
+
 
     -  ### Tipagem dinâmica:
         A tipagem dinâmica dá mais liberdade sobre o dado que uma variável pode receber. Ela está presente em muitas linguagens, como o **JavaScript**. Nelas, você pode atribuir qualquer tipo de dado à mesma variável, seja string, number, boolean etc. Ou seja, você pode ter uma variável que antes guardava um número e depois passar a guardar uma string, o tipo dela muda de acordo com o valor que está armazenando no momento.
