@@ -267,7 +267,6 @@ console.log(usuario.nome); // Imprime: Johnny
  - **Aqui vai alguns exemplos de como usar:**
   [Usando operados matemáticos no TypeScript](Exemplos/Operadores.ts)
 
--------------------------------------------- 3
 # **Estruturas Condicionais no TypeScript**
 
 
@@ -398,8 +397,6 @@ Exemplo:
 
  - **Aqui vai alguns exemplos de como usar:**
   [Utilizando estruturas de condição e operadores lógicos em TypeScript](Exemplos/condicoes.ts)
-
--------------------------------------------- 4 
 
 # **Loops e Iteração:**
 
@@ -598,7 +595,6 @@ Tome muito cuidado para não cair em laços infinitos, uma maneira de contornar 
 
 [Estrutura de Repetição For](Exemplos/LaçoFor.ts)
 
--------------------------------------------- 5
 # **Funções**
 
 ## **Funções em TypeScript**
