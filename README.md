@@ -291,11 +291,25 @@ Estruturas condicionais permitem que o programa tome decisões com base em condi
  }
 ```
 
-Também caso a condição primeira não for atendida é possível adicionar mais uma condição a ser verificada em seguida, por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas da sua família podem ou não votar, ao perguntar você terá as condições/possibilidades:
- - se(if) a idade for maior ou igual a 18 -> é maior de idade e pode votar
- - se não, verifique se(else if) a idade for maior ou igual a 16 e menor que 18 -> pode votar mas ainda não é maior de idade
- - se não(else) é menor de idade
+## Operadores de Comparação (Relacionais)
 
+Esses operadores são usados dentro das condições para comparar valores
+
+| Operador | Significado                           |
+| -------- | ------------------------------------- |
+| `>`      | maior que                             |
+| `<`      | menor que                             |
+| `>=`     | maior ou igual                        |
+| `<=`     | menor ou igual                        |
+| `==`     | igual (compara só o valor)            |
+| `===`    | estritamente igual (valor e tipo)     |
+| `!=`     | diferente (valor)                     |
+| `!==`    | estritamente diferente (valor + tipo) |
+
+Aqui nesse exemplo, caso a condição primeira não for atendida é possível adicionar mais uma condição a ser verificada em seguida, por exemplo, você está fazendo uma pesquisa para descobrir quantas pessoas da sua família podem ou não votar, ao perguntar você terá as condições/possibilidades:
+ - se(if) a idade for maior ou igual a 18 -> é maior de idade e pode votar
+ - se não, verifica se(else if) a idade for maior ou igual a 16 e menor que 18 -> pode votar mas ainda não é maior de idade
+ - se não(else), nenhuma das condições foram atendidas então, é menor de idade
 ``` ts
  const idade: number = 17;
 
@@ -356,6 +370,30 @@ if (temIngresso || estaNaLista) {
 } else {
   console.log("Entrada não permitida.");
 }
+```
+
+## Operador Ternário (?:) — Condição em uma única linha
+
+O operador ternário é uma forma resumida de escrever um if / else.
+Ele usa a estrutura:
+``` ts
+  condicao ? valorSeVerdadeiro : valorSeFalso
+```
+
+É ideal para decisões rápidas e simples, tornando o código mais limpo.
+Exemplo: 
+``` ts
+  const idade = 20;
+
+  // if/else tradicional:
+  // if (idade >= 18) {
+  //   console.log("Adulto");
+  // } else {
+  //   console.log("Menor de idade");
+  // }
+
+  const status = idade >= 18 ? "Adulto" : "Menor de idade";
+  console.log(status); // Adulto
 ```
 
  - **Aqui vai alguns exemplos de como usar:**
