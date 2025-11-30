@@ -249,7 +249,7 @@ console.log(usuario.nome); // Imprime: Johnny
             -  No **TypeScritp** quando criamos uma variável e atribuimos um valor, ela automaticamente irá se tornar uma várivel do tipo do primero valor que ela receber, por exemplo: `let nome = "Jose"`; nesse caso a variável terá seu tipo definido como string, e caso tente atribuir um tipo de dado diferente a ela, não irá funcinar.
             - Podemos definir seu tipo sem necessariamente adicona um valor, dessa forma: `let numero: number;` ou `let nome: string = "Jose"`; essa é forma mais recomendada e usada, sempre que for declarar uma variável declare o seu tipo dessa forma.
 
-  - ### Exemplo de variavei com tipos:
+  - ### Exemplo de variaveis com tipos:
     - Agora que aprendemos o básico sobre variáveis e tipos, vamos vê alguns exemplos bacanas de como podemos usar elas no nosso código:
       [Usando variáveis no TypeScritp](Exemplos/variaveis.ts)
 
@@ -265,7 +265,7 @@ console.log(usuario.nome); // Imprime: Johnny
     |adição, subtração| +, -        |
 
  - **Aqui vai alguns exemplos de como usar:**
-  [Usando operados matemáticos no TypeScript](Exemplos/operadores.ts)
+  [Usando operados matemáticos no TypeScript](Exemplos/Operadores.ts)
 
 -------------------------------------------- 3
 # **Estruturas Condicionais no TypeScript**
