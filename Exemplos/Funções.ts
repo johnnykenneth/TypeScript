@@ -3,7 +3,7 @@ function saudacao(nome: string): string {
   return `Olá, ${nome}!`;
 }
 
-// Função com parâmetro opcional: idade pode existir ou não
+// Função com parâmetro opcional: idade pode existir ou não (parâmetro: ?)
 function mostrarIdade(nome: string, idade?: number): string {
   if (idade) {
     return `${nome} tem ${idade} anos.`;
