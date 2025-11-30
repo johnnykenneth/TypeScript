@@ -619,6 +619,10 @@ const multiplicar = (a: number, b: number): number => {
 };
 ```
 
+- **Aqui vai alguns exemplos de como usar:**
+  [Utilizando funções em TypeScript](Exemplos/Funções.ts)
+
+
 ### 
 
 
