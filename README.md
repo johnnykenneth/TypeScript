@@ -435,11 +435,11 @@ Essas estruturas são semelhantes, mas possuem suas diferenças. Vamos entender 
 Podemos vizualizar da seguinte forma:
 
 ``` ts
-let c: number = 1
+let c: number = 1;
 
 while (c < 5) {
-    console.log(c)
-    c++
+    console.log(c);
+    c++;
 }
 ``` 
 
@@ -458,11 +458,11 @@ Explicando:
 Se quisermos imprimir os números de 1 até 5, basta adicionar o "=" no teste lógico:
 
 ``` ts
-let c: number = 1
+let c: number = 1;
 
 while (c <= 5) {
-    console.log(c)
-    c++
+    console.log(c);
+    c++;
 }
 ```
 
@@ -493,11 +493,11 @@ do {
 Exemplo: 
 
 ``` ts
-let c: number = 1
+let c: number = 1;
 
 do {
-    console.log(c)
-    c++
+    console.log(c);
+    c++;
 } while (c <= 5)
 ```
 
@@ -540,7 +540,7 @@ Exemplo:
 
 ``` ts
 for (let c: number = 0; c < 10; c++) {
-    console.log(c)
+    console.log(c);
 }
 ```
 No exemplo acima, temos:
@@ -557,7 +557,7 @@ Se quisermos imprimir os números de 0 a 10, basta adicionar o "=" na condição
 
 ``` ts
 for (let c: number = 0; c <= 10; c++) {
-    console.log(c)
+    console.log(c);
 }
 ```
 
@@ -578,10 +578,10 @@ Note que, ao usar o for não utilizamos a palavra **enquanto**, pois há uma qua
 Ex.:
 
 ``` ts
-let c: number = 1
+let c: number = 1;
 
 while (c < 5) {
-    console.log(c)
+    console.log(c);
 }
 ```
 
@@ -591,6 +591,12 @@ Tome muito cuidado para não cair em laços infinitos, uma maneira de contornar 
 
 #### (2) O laço de repetição For também pode ser usado para percorrer arrays ou listas. Essa é uma funcionalidade extremamente importante e que aprenderemos logo a seguir!
 
+
+### Bem, esse é um bom resumo sobre os laços de repetição do TypeScript. Agora, veja mais exemplos aprofundados nas pastas abaixo:
+
+[Estruturas de Repetição While e Do While](Exemplos/LaçoWhile.ts) 
+
+[Estrutura de Repetição For](Exemplos/LaçoFor.ts)
 
 -------------------------------------------- 5
 # **Funções**
