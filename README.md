@@ -82,7 +82,6 @@ node arquivo.js
 
 ---
 
--------------------------------------------- 2
 # **Tipos básicos e variáveis**
 
 ## Variáveis:
@@ -151,8 +150,6 @@ node arquivo.js
 
 - ### Boolean:
   - O **Boolean** é um tipo de dado que só tem dois valores, sendo eles ``true``(verdadeiro) ou ``false``(falso). Ela é usado quando precisamos tomar decisões importantes no nosso código, como por exemplo comparar valores ou verificar se uma função é verdadeira.
-- ## Tipagem de variáveis
-  Agora que aprendemos os tipos primitivos e o que é uma variável, vamos definir o tipo de uma variável. Antes disso, precisamos entender a diferença entre tipagem dinâmica e tipagem estática:
 
 - ### Entrada e Saída de Dados:
   Para que um programa seja útil, ele geralmente precisa se comunicar com o mundo exterior. Ele precisa receber informações (Entrada/Input) e mostrar resultados (Saída/Output). Vamos entender como fazer isso no TypeScript rodando no ambiente Node.js.
@@ -239,6 +236,8 @@ let usuario: Pessoa = {
 console.log(usuario.nome); // Imprime: Johnny
 ```
 
+- ## Tipagem de variáveis
+  Agora que aprendemos os tipos primitivos e o que é uma variável, vamos definir o tipo de uma variável. Antes disso, precisamos entender a diferença entre tipagem dinâmica e tipagem estática:
 
     -  ### Tipagem dinâmica:
         A tipagem dinâmica dá mais liberdade sobre o dado que uma variável pode receber. Ela está presente em muitas linguagens, como o **JavaScript**. Nelas, você pode atribuir qualquer tipo de dado à mesma variável, seja string, number, boolean etc. Ou seja, você pode ter uma variável que antes guardava um número e depois passar a guardar uma string, o tipo dela muda de acordo com o valor que está armazenando no momento.
