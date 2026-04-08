@@ -175,6 +175,10 @@ console.log(nota);
 console.log(`O aluno tirou nota: ${nota}`);
 ```
 
+
+
+Você achou que aquele foi o ultimo commit?
+
 - ## Entrada de Dados (Input):
 A entrada de dados é a forma como o usuário "fala" com o programa. Diferente de algumas linguagens que possuem um comando simples como leia() ou input(), no TypeScript (usando Node.js), a entrada de dados nativa exige um pouquinho mais de código, pois o Node trabalha com eventos e para capturar o que o usuário digita no terminal, usamos um módulo nativo chamado readline.
 
